@@ -1,0 +1,8 @@
+type regb = AL | AH | BL | BH | CL | CH | DL | DH
+type regw = AX | BX | CX | DX | SI | DI | BP | SP
+type rseg = CS | DS | ES | SS
+
+ADD AL      im:BYTE = 04 im
+ADD AX      im:WORD = 05 im
+ADD dr:regb sr:regb = 02 ...
+ADD dr:regb sm:MEMB = 02 ...
